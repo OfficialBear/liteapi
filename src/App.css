@@ -1,0 +1,178 @@
+.liteapi-layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.liteapi-sidebar {
+  background: #fafafa;
+  border-right: none;
+  overflow: hidden !important;
+}
+/* Override Ant Design's overflow: auto on Sider */
+.liteapi-sidebar.ant-layout-sider {
+  overflow: hidden !important;
+}
+.liteapi-sidebar .ant-layout-sider-children {
+  overflow: hidden !important;
+}
+
+/* Draggable sidebar resize handle */
+.liteapi-sidebar-divider {
+  width: 4px;
+  cursor: col-resize;
+  background: transparent;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.liteapi-sidebar-divider:hover {
+  background: #e8e8e8;
+}
+.liteapi-sidebar-divider-handle {
+  width: 2px;
+  height: 32px;
+  border-radius: 1px;
+  background: #ccc;
+  transition: background 0.15s;
+}
+.liteapi-sidebar-divider:hover .liteapi-sidebar-divider-handle {
+  background: #999;
+}
+
+.liteapi-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.liteapi-tabbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.liteapi-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.liteapi-request {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 16px;
+  background: #fff;
+}
+
+.liteapi-divider {
+  height: 6px;
+  cursor: row-resize;
+  background: #f0f0f0;
+  flex-shrink: 0;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+
+.liteapi-divider:hover {
+  background: #d9d9d9;
+}
+
+.liteapi-divider-handle {
+  width: 32px;
+  height: 3px;
+  border-radius: 2px;
+  background: #bbb;
+  transition: background 0.15s, width 0.15s;
+}
+
+.liteapi-divider:hover .liteapi-divider-handle {
+  background: #888;
+  width: 48px;
+}
+
+.liteapi-response {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  background: #fff;
+}
+
+.liteapi-empty-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #999;
+  font-size: 14px;
+  user-select: none;
+}
+
+/* ===== Dark Mode ===== */
+
+.liteapi-dark.liteapi-layout {
+  background: #141414;
+}
+
+.liteapi-dark .liteapi-sidebar {
+  background: #1f1f1f;
+}
+
+.liteapi-dark .liteapi-sidebar-divider:hover {
+  background: #303030;
+}
+.liteapi-dark .liteapi-sidebar-divider-handle {
+  background: #555;
+}
+.liteapi-dark .liteapi-sidebar-divider:hover .liteapi-sidebar-divider-handle {
+  background: #888;
+}
+
+.liteapi-dark .liteapi-tabbar {
+  background: #141414;
+  border-bottom-color: #303030;
+}
+
+.liteapi-dark .liteapi-request {
+  background: #141414;
+}
+
+.liteapi-dark .liteapi-response {
+  background: #141414;
+}
+
+.liteapi-dark .liteapi-divider {
+  background: #1f1f1f;
+  border-top-color: #303030;
+  border-bottom-color: #303030;
+}
+
+.liteapi-dark .liteapi-divider:hover {
+  background: #2a2a2a;
+}
+
+.liteapi-dark .liteapi-divider-handle {
+  background: #555;
+}
+
+.liteapi-dark .liteapi-divider:hover .liteapi-divider-handle {
+  background: #888;
+}
+
+.liteapi-dark .liteapi-empty-content {
+  color: #666;
+}

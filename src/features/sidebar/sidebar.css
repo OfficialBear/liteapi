@@ -1,0 +1,38 @@
+.liteapi-sidebar .ant-tree {
+  background: transparent;
+}
+
+.liteapi-sidebar .ant-tree-treenode {
+  padding: 1px 0;
+}
+
+.liteapi-sidebar .ant-tree-node-content-wrapper {
+  border-radius: 4px;
+}
+
+.liteapi-sidebar .ant-tree-node-content-wrapper:hover {
+  background: #e6f4ff;
+}
+
+.liteapi-sidebar .ant-tree-node-selected .ant-tree-node-content-wrapper {
+  background: #bae0ff !important;
+}
+
+/* Dark mode */
+.liteapi-dark .liteapi-sidebar .ant-tree {
+  color: #d9d9d9;
+}
+
+.liteapi-dark .liteapi-sidebar .ant-tree-node-content-wrapper:hover {
+  background: rgba(22, 119, 255, 0.15);
+}
+
+.liteapi-dark .liteapi-sidebar .ant-tree-node-selected .ant-tree-node-content-wrapper {
+  background: rgba(22, 119, 255, 0.25) !important;
+}
+
+.liteapi-dark .liteapi-sidebar .ant-input-search input {
+  background: #2a2a2a;
+  border-color: #434343;
+  color: #d9d9d9;
+}
